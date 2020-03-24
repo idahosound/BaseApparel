@@ -1,0 +1,20 @@
+html {
+  box-sizing: border-box;
+}
+* {
+  margin: 0;
+}
+body {
+  font-family: 'Josefin Sans', sans-serif;
+}
+.hero {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.attribution {
+  font-size: 11px; text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
