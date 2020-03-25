@@ -12,23 +12,22 @@
 <body>
   <header>
     <img src="images/logo.svg" />
+    <div class="hero"></div>
   </header>
-<img class="hero" src="images/hero-desktop.jpg" />
 <section class="container">
   <h1>We're <span>coming soon</span></h1>
   <P class="greeting">
     Hello fellow shoppers! We're currently building our new fashion store.
     Add your email below to stay up-to-date with announcements and our launch deals.
   </P>
-  <form onsubmit=" showInput('eml')">
-    <input id="eml" type="email" placeholder="Email Address" name="email" required/>
+  <form onsubmit="showInput('eml')">
+    <input id="eml" type="email" placeholder="Email Address" name="email" required />
+    <img class="error-icon" src="images/icon-error.svg" />
     <button id="submit" type="submit">
       <img src="images/icon-arrow.svg" />
     </button>
   </form>
 </section>
-
-
   <footer>
     <p class="attribution">
       Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
