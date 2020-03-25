@@ -1,8 +1,9 @@
 html {
   box-sizing: border-box;
 }
-* {
-  margin: 0;
+*, *:before, *:after {
+    margin: 0;
+    box-sizing: inherit;
 }
 body {
   font-family: 'Josefin Sans', sans-serif;
@@ -10,6 +11,7 @@ body {
   color: hsl(0, 36%, 70%);
   padding-left: 165px;
   padding-top: 60px;
+  background-image: url("images/bg-pattern-desktop.svg");
 }
 h1 {
   font-size: 48px;
@@ -21,7 +23,7 @@ h1 {
 }
 h1 span {
   font-weight: 600;
-  color: black;
+  color: hsl(0, 6%, 24%);
 }
 .container {
   width: 450px;
@@ -34,6 +36,35 @@ h1 span {
 }
 .greeting {
   line-height: 2;
+}
+form {
+  margin-top:50px;
+  position: relative;
+  left:-10px;
+}
+form>* {
+  border-radius: 27px;
+}
+#eml {
+  height: 54px;
+  width: 446px;
+  border-style: solid;
+  border-width: thin;
+  border-color: hsl(0, 36%, 70%);
+  padding-left: 25px;
+}
+::placeholder {
+  color: hsl(0, 36%, 70%);
+}
+#submit {
+  display: inline;
+  position:absolute;
+  right: 0;
+  height: 54px;
+  width: 100px;
+  border-style: none;
+  background-image:linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+  color: white;
 }
 .attribution {
   font-size: 11px; text-align: center;
